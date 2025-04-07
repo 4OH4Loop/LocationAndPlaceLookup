@@ -11,6 +11,9 @@
 		82F06F602DA3398100378F55 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F06F5C2DA3398100378F55 /* ContentView.swift */; };
 		82F06F612DA3398100378F55 /* LocationAndPlaceLookupApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F06F5D2DA3398100378F55 /* LocationAndPlaceLookupApp.swift */; };
 		82F06F632DA339CA00378F55 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F06F622DA339CA00378F55 /* LocationManager.swift */; };
+		82F06F662DA3601900378F55 /* PlaceLookupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F06F652DA3601900378F55 /* PlaceLookupView.swift */; };
+		82F06F682DA3622C00378F55 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F06F672DA3622B00378F55 /* Place.swift */; };
+		82F06F6A2DA364D200378F55 /* PlaceLookupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F06F692DA364D200378F55 /* PlaceLookupViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,10 @@
 		82F06F5C2DA3398100378F55 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		82F06F5D2DA3398100378F55 /* LocationAndPlaceLookupApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationAndPlaceLookupApp.swift; sourceTree = "<group>"; };
 		82F06F622DA339CA00378F55 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		82F06F642DA35FDB00378F55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		82F06F652DA3601900378F55 /* PlaceLookupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceLookupView.swift; sourceTree = "<group>"; };
+		82F06F672DA3622B00378F55 /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		82F06F692DA364D200378F55 /* PlaceLookupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceLookupViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,9 +58,13 @@
 		82F06F5E2DA3398100378F55 /* LocationAndPlaceLookup */ = {
 			isa = PBXGroup;
 			children = (
+				82F06F642DA35FDB00378F55 /* Info.plist */,
 				82F06F5D2DA3398100378F55 /* LocationAndPlaceLookupApp.swift */,
+				82F06F672DA3622B00378F55 /* Place.swift */,
+				82F06F692DA364D200378F55 /* PlaceLookupViewModel.swift */,
 				82F06F622DA339CA00378F55 /* LocationManager.swift */,
 				82F06F5C2DA3398100378F55 /* ContentView.swift */,
+				82F06F652DA3601900378F55 /* PlaceLookupView.swift */,
 				82F06F5B2DA3398100378F55 /* Assets.xcassets */,
 			);
 			path = LocationAndPlaceLookup;
@@ -133,7 +144,10 @@
 			files = (
 				82F06F602DA3398100378F55 /* ContentView.swift in Sources */,
 				82F06F612DA3398100378F55 /* LocationAndPlaceLookupApp.swift in Sources */,
+				82F06F662DA3601900378F55 /* PlaceLookupView.swift in Sources */,
 				82F06F632DA339CA00378F55 /* LocationManager.swift in Sources */,
+				82F06F6A2DA364D200378F55 /* PlaceLookupViewModel.swift in Sources */,
+				82F06F682DA3622C00378F55 /* Place.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,10 +285,10 @@
 				DEVELOPMENT_TEAM = ZASGZ6M8RB;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LocationAndPlaceLookup/Info.plist;
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app requires access to the device's location";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -300,10 +314,10 @@
 				DEVELOPMENT_TEAM = ZASGZ6M8RB;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LocationAndPlaceLookup/Info.plist;
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app requires access to the device's location";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
