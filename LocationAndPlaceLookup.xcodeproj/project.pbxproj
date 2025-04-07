@@ -6,17 +6,20 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		82F06F5F2DA3398100378F55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82F06F5B2DA3398100378F55 /* Assets.xcassets */; };
+		82F06F602DA3398100378F55 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F06F5C2DA3398100378F55 /* ContentView.swift */; };
+		82F06F612DA3398100378F55 /* LocationAndPlaceLookupApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F06F5D2DA3398100378F55 /* LocationAndPlaceLookupApp.swift */; };
+		82F06F632DA339CA00378F55 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F06F622DA339CA00378F55 /* LocationManager.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		82F06F4D2DA3395700378F55 /* LocationAndPlaceLookup.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocationAndPlaceLookup.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		82F06F5B2DA3398100378F55 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		82F06F5C2DA3398100378F55 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		82F06F5D2DA3398100378F55 /* LocationAndPlaceLookupApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationAndPlaceLookupApp.swift; sourceTree = "<group>"; };
+		82F06F622DA339CA00378F55 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		82F06F4F2DA3395700378F55 /* LocationAndPlaceLookup */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = LocationAndPlaceLookup;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		82F06F4A2DA3395700378F55 /* Frameworks */ = {
@@ -32,7 +35,7 @@
 		82F06F442DA3395700378F55 = {
 			isa = PBXGroup;
 			children = (
-				82F06F4F2DA3395700378F55 /* LocationAndPlaceLookup */,
+				82F06F5E2DA3398100378F55 /* LocationAndPlaceLookup */,
 				82F06F4E2DA3395700378F55 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +46,17 @@
 				82F06F4D2DA3395700378F55 /* LocationAndPlaceLookup.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		82F06F5E2DA3398100378F55 /* LocationAndPlaceLookup */ = {
+			isa = PBXGroup;
+			children = (
+				82F06F5D2DA3398100378F55 /* LocationAndPlaceLookupApp.swift */,
+				82F06F622DA339CA00378F55 /* LocationManager.swift */,
+				82F06F5C2DA3398100378F55 /* ContentView.swift */,
+				82F06F5B2DA3398100378F55 /* Assets.xcassets */,
+			);
+			path = LocationAndPlaceLookup;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -59,9 +73,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				82F06F4F2DA3395700378F55 /* LocationAndPlaceLookup */,
 			);
 			name = LocationAndPlaceLookup;
 			packageProductDependencies = (
@@ -109,6 +120,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82F06F5F2DA3398100378F55 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +131,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82F06F602DA3398100378F55 /* ContentView.swift in Sources */,
+				82F06F612DA3398100378F55 /* LocationAndPlaceLookupApp.swift in Sources */,
+				82F06F632DA339CA00378F55 /* LocationManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,6 +271,7 @@
 				DEVELOPMENT_TEAM = ZASGZ6M8RB;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app requires access to the device's location";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -284,6 +300,7 @@
 				DEVELOPMENT_TEAM = ZASGZ6M8RB;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app requires access to the device's location";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
